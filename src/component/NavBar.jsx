@@ -1,8 +1,20 @@
 import React from 'react';
-
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
+import SimpleDialog from './SimpleDialog';
 
 const NavBar = () => {
+  const [open, setOpen] = React.useState(false);
+  const [selectedValue, setSelectedValue] = React.useState("emails[1]");
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+    setSelectedValue(value);
+  };
 
   return (
     <>
@@ -25,32 +37,41 @@ const NavBar = () => {
         <ul className="navbar-nav">
           <li className="nav-item active">
           <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
-
           </li>
           <li className="nav-item">
           <Link className="nav-link" to="/about">About</Link>
           </li>
           <li className="nav-item">
-              <Link className="nav-link"> Departments</Link>
+              <Link className="nav-link" to="/department"> Departments</Link>
           </li>
           <li className="nav-item">
-              <Link className="nav-link">Doctors</Link>
+              <Link className="nav-link" to="/doctor">Doctors</Link>
 
           </li>
           <li className="nav-item">
-              <Link className="nav-link"> Contact Us</Link>
+              <Link className="nav-link" to="/contact"> Contact Us</Link>
           </li>
           <form className="form-inline">
             <button className="btn  my-2 my-sm-0 nav_search-btn" type="submit">
               <i className="fa fa-search" aria-hidden="true" />
             </button>
           </form>
+          <li className="nav-item">
+          <Button variant="outlined"className="nav-link" onClick={handleClickOpen}>
+ Sigh Up
+</Button>
+          </li>
         </ul>
+        
       </div>
     </nav>
   </div>
 </header>
-<Outlet></Outlet>
+<SimpleDialog
+        selectedValue={selectedValue}
+        open={open}
+        onClose={handleClose}
+      />
     </>      
   )
 }
