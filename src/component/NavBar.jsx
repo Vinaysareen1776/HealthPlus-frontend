@@ -21,7 +21,7 @@ const NavBar = () => {
     <header className="header_section">
   <div className="container">
     <nav className="navbar navbar-expand-lg custom_nav-container ">   
-     <Link className="navbar-brand" to="/"><span>Orthoc</span></Link> 
+     <Link className="navbar-brand" to="/"><span>Helath+</span></Link> 
       <button
         className="navbar-toggler"
         type="button"
