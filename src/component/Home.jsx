@@ -14,6 +14,9 @@ import s4 from '../assets/images/s4.png';
 // import t3 from '../assets/images/t3.jpg';
 // import t4 from '../assets/images/t4.jpg';
 import about from '../assets/images/about-img.jpg';
+import About from './About';
+import Doctor from './Doctor';
+import Contact from './Contact';
 
 
 const Home = () => {
@@ -37,10 +40,7 @@ const Home = () => {
                                                                              <div className="detail-box">
                                                                                     <h1>We Provide Best Healthcare</h1>
                                                                                     <p>
-                                                                                           Explicabo esse amet tempora quibusdam laudantium, laborum
-                                                                                           eaque magnam fugiat hic? Esse dicta aliquid error
-                                                                                           repudiandae earum suscipit fugiat molestias, veniam, vel
-                                                                                           architecto veritatis delectus repellat modi impedit sequi😎😎😎😎😎😎.
+                                                                                    At our hospital, we are committed to providing the best healthcare services to our patients. Our dedicated team of healthcare professionals strives for excellence in all aspects of patient care. From our state-of-the-art facilities to our compassionate approach, we are dedicated to ensuring the highest quality of healthcare for everyone we serve.
                                                                                     </p>
                                                                                     <div className="btn-box">
                                                                                            <a href="" className="btn1">
@@ -59,10 +59,8 @@ const Home = () => {
                                                                              <div className="detail-box">
                                                                                     <h1>We Provide Best Healthcare</h1>
                                                                                     <p>
-                                                                                           Explicabo esse amet tempora quibusdam laudantium, laborum
-                                                                                           eaque magnam fugiat hic? Esse dicta aliquid error
-                                                                                           repudiandae earum suscipit fugiat molestias, veniam, vel
-                                                                                           architecto veritatis delectus repellat modi impedit sequi.
+                                                                                    At our hospital, we are committed to providing the best healthcare services to our patients. Our dedicated team of healthcare professionals strives for excellence in all aspects of patient care. From our state-of-the-art facilities to our compassionate approach, we are dedicated to ensuring the highest quality of healthcare for everyone we serve.
+
                                                                                     </p>
                                                                                     <div className="btn-box">
                                                                                            <a href="" className="btn1">
@@ -81,10 +79,8 @@ const Home = () => {
                                                                              <div className="detail-box">
                                                                                     <h1>We Provide Best Healthcare</h1>
                                                                                     <p>
-                                                                                           Explicabo esse amet tempora quibusdam laudantium, laborum
-                                                                                           eaque magnam fugiat hic? Esse dicta aliquid error
-                                                                                           repudiandae earum suscipit fugiat molestias, veniam, vel
-                                                                                           architecto veritatis delectus repellat modi impedit sequi.
+                                                                                    At our hospital, we are committed to providing the best healthcare services to our patients. Our dedicated team of healthcare professionals strives for excellence in all aspects of patient care. From our state-of-the-art facilities to our compassionate approach, we are dedicated to ensuring the highest quality of healthcare for everyone we serve.
+
                                                                                     </p>
                                                                                     <div className="btn-box">
                                                                                            <a href="" className="btn1">
@@ -187,179 +183,13 @@ const Home = () => {
                      </section>
                      {/* end department section */}
                      {/* about section */}
-                     <section className="about_section layout_margin-bottom">
-                            <div className="container  ">
-                                   <div className="row">
-                                          <div className="col-md-6 ">
-                                                 <div className="img-box">
-                                                        <img src={about} alt="" />
-                                                 </div>
-                                          </div>
-                                          <div className="col-md-6">
-                                                 <div className="detail-box">
-                                                        <div className="heading_container">
-                                                               <h2>
-                                                                      About <span>Us</span>
-                                                               </h2>
-                                                        </div>
-                                                        <p>
-                                                               There are many variations of passages of Lorem Ipsum available,
-                                                               but the majority have suffered alteration in some form, by
-                                                               injected humour, or randomised words which don't look even
-                                                               slightly believable. If you are going to use a passage of Lorem
-                                                               Ipsum, you need to be sure there isn't anything embarrassing
-                                                               hidden in the middle of text. All
-                                                        </p>
-                                                        <a href="">Read More</a>
-                                                 </div>
-                                          </div>
-                                   </div>
-                            </div>
-                     </section>
+                     <About/>
                      {/* end about section */}
                      {/* doctor section */}
-                     <section className="doctor_section layout_padding">
-                            <div className="container">
-                                   <div className="heading_container heading_center">
-                                          <h2>Our Doctors</h2>
-                                          <p className="col-md-10 mx-auto px-0">
-                                                 Incilint sapiente illo quo praesentium officiis laudantium nostrum, ad
-                                                 adipisci cupiditate sit, quisquam aliquid. Officiis laudantium fuga ad
-                                                 voluptas aspernatur error fugiat quos facilis saepe quas fugit, beatae
-                                                 id quisquam.
-                                          </p>
-                                   </div>
-                                   <div className="row">
-                                          <div className="col-sm-6 col-lg-4 mx-auto">
-                                                 <div className="box">
-                                                        <div className="img-box">
-                                                               <img src={d1} alt="" />
-                                                        </div>
-                                                        <div className="detail-box">
-                                                               <div className="social_box">
-                                                                      <a href="">
-                                                                             <i className="fa fa-facebook" aria-hidden="true" />
-                                                                      </a>
-                                                                      <a href="">
-                                                                             <i className="fa fa-twitter" aria-hidden="true" />
-                                                                      </a>
-                                                                      <a href="">
-                                                                             <i className="fa fa-youtube" aria-hidden="true" />
-                                                                      </a>
-                                                                      <a href="">
-                                                                             <i className="fa fa-linkedin" aria-hidden="true" />
-                                                                      </a>
-                                                               </div>
-                                                               <h5>Elina Josh</h5>
-                                                               <h6 className="">Doctor</h6>
-                                                        </div>
-                                                 </div>
-                                          </div>
-                                          <div className="col-sm-6 col-lg-4 mx-auto">
-                                                 <div className="box">
-                                                        <div className="img-box">
-                                                               <img src={d2} alt="" />
-                                                        </div>
-                                                        <div className="detail-box">
-                                                               <div className="social_box">
-                                                                      <a href="">
-                                                                             <i className="fa fa-facebook" aria-hidden="true" />
-                                                                      </a>
-                                                                      <a href="">
-                                                                             <i className="fa fa-twitter" aria-hidden="true" />
-                                                                      </a>
-                                                                      <a href="">
-                                                                             <i className="fa fa-youtube" aria-hidden="true" />
-                                                                      </a>
-                                                                      <a href="">
-                                                                             <i className="fa fa-linkedin" aria-hidden="true" />
-                                                                      </a>
-                                                               </div>
-                                                               <h5>Adam View</h5>
-                                                               <h6 className="">Doctor</h6>
-                                                        </div>
-                                                 </div>
-                                          </div>
-                                          <div className="col-sm-6 col-lg-4 mx-auto">
-                                                 <div className="box">
-                                                        <div className="img-box">
-                                                               <img src={d3} alt="" />
-                                                        </div>
-                                                        <div className="detail-box">
-                                                               <div className="social_box">
-                                                                      <a href="">
-                                                                             <i className="fa fa-facebook" aria-hidden="true" />
-                                                                      </a>
-                                                                      <a href="">
-                                                                             <i className="fa fa-twitter" aria-hidden="true" />
-                                                                      </a>
-                                                                      <a href="">
-                                                                             <i className="fa fa-youtube" aria-hidden="true" />
-                                                                      </a>
-                                                                      <a href="">
-                                                                             <i className="fa fa-linkedin" aria-hidden="true" />
-                                                                      </a>
-                                                               </div>
-                                                               <h5>Mia Mike</h5>
-                                                               <h6 className="">Doctor</h6>
-                                                        </div>
-                                                 </div>
-                                          </div>
-                                   </div>
-                                   <div className="btn-box">
-                                          <a href="">View All</a>
-                                   </div>
-                            </div>
-                     </section>
+                     <Doctor></Doctor>
                      {/* end doctor section */}
                      {/* contact section */}
-                     <section className="contact_section layout_padding">
-                            <div className="container">
-                                   <div className="heading_container">
-                                          <h2>Get In Touch</h2>
-                                   </div>
-                                   <div className="row">
-                                          <div className="col-md-6">
-                                                 <div className="form_container contact-form">
-                                                        <form action="">
-                                                               <div className="form-row">
-                                                                      <div className="col-lg-6">
-                                                                             <div>
-                                                                                    <input type="text" placeholder="Your Name" />
-                                                                             </div>
-                                                                      </div>
-                                                                      <div className="col-lg-6">
-                                                                             <div>
-                                                                                    <input type="text" placeholder="Phone Number" />
-                                                                             </div>
-                                                                      </div>
-                                                               </div>
-                                                               <div>
-                                                                      <input type="email" placeholder="Email" />
-                                                               </div>
-                                                               <div>
-                                                                      <input
-                                                                             type="text"
-                                                                             className="message-box"
-                                                                             placeholder="Message"
-                                                                      />
-                                                               </div>
-                                                               <div className="btn_box">
-                                                                      <button>SEND</button>
-                                                               </div>
-                                                        </form>
-                                                 </div>
-                                          </div>
-                                          <div className="col-md-6">
-                                                 <div className="map_container">
-                                                        <div className="map">
-                                                               <div id="googleMap" />
-                                                        </div>
-                                                 </div>
-                                          </div>
-                                   </div>
-                            </div>
-                     </section>
+                     <Contact/>
                      {/* end contact section */}
                      {/* client section */}
                      <section className="client_section layout_padding-bottom">

@@ -1,0 +1,100 @@
+.dialog-container {
+       border-radius: 8px;
+       height: 80%;
+       overflow: hidden;
+     }
+     
+     .dialog-title {
+       display: flex;
+       align-items: center;
+     }
+     
+     .dialog-title h2 {
+       flex: 1;
+     }
+     
+     .close-button {
+       background: none;
+       border: none;
+       float:right;
+     }
+     
+     .dialog-content {
+
+       display: block;
+
+       flex-direction: column;
+
+       align-items: center;
+
+       padding: 36px;
+
+     }
+     
+     .dialog-content img {
+       width: 100%;
+       max-width: 400px;
+       height: auto;
+       border-radius: 8px;
+       margin-bottom: 16px;
+     }
+     
+     .dialog-content p {
+       font-size: 18px;
+       font-weight: bold;
+       margin-bottom: 16px;
+     }
+     
+     .mobile-number-input {
+       display: flex;
+       align-items: center;
+       margin-bottom: 16px;
+       width: 100%;
+       max-width: 400px;
+     }
+     
+     .country-code {
+       font-size: 18px;
+       font-weight: bold;
+       margin-right: 8px;
+     }
+     
+     .input-field {
+       flex: 1;
+       padding: 8px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       outline: none;
+     }
+     
+     .sign-up-button {
+       background: #ccc;
+       color: #fff;
+       border: none;
+       padding: 10px 20px;
+       border-radius: 4px;
+       cursor: pointer;
+       font-size: 16px;
+       font-weight: bold;
+       width: 100%;
+       max-width: 400px;
+     }
+     
+     .login-link {
+       margin-top: 8px;
+       text-align: center;
+     }
+     .display_flex {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+     }
+     
+     .display_flex h2 {
+       flex: 1;
+     }
+     
+     .close-button {
+       margin-left: auto;
+     }
+     
