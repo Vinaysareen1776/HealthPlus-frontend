@@ -1,6 +1,6 @@
 import React from 'react';
 import about from '../assets/images/about-img.jpg';
-
+import Footer from './Footer';
 const About = () => {
   return (
       
@@ -32,6 +32,7 @@ const About = () => {
       </div>
     </div>
   </div>
+ 
 </section>
 
    

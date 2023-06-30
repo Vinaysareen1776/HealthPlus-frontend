@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './component/Home';
 import NavBar from './component/NavBar';
@@ -6,6 +5,7 @@ import About from './component/About';
 import Doctor from './component/Doctor';
 import Footer from './component/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Register from './component/Register';
 
 function App() {
   return (
@@ -14,12 +14,13 @@ function App() {
       <BrowserRouter>
       <NavBar />
         <Routes>
-          <Route path="/" element={<Home />}>
+          <Route path="/" element={<Home/>}></Route>
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/doctor" element={<Doctor />} />
             {/* <Route path="*" element={<NoPage />} /> */}
-          </Route>
+            <Route path="/register" element={<Register/>}/>
+      
         </Routes>
         <Footer/>
       </BrowserRouter>

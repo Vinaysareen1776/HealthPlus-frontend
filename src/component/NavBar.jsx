@@ -9,7 +9,7 @@ const NavBar = () => {
     <header className="header_section">
   <div className="container">
     <nav className="navbar navbar-expand-lg custom_nav-container ">   
-     <Link className="navbar-brand" to="/"><span>Orthoc</span></Link> 
+     <Link className="navbar-brand" to="/"><span>Helath+</span></Link> 
       <button
         className="navbar-toggler"
         type="button"
@@ -24,7 +24,7 @@ const NavBar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav">
           <li className="nav-item active">
-          <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+          <Link className="nav-link" to="/home">Home <span className="sr-only">(current)</span></Link>
 
           </li>
           <li className="nav-item">
@@ -45,6 +45,9 @@ const NavBar = () => {
               <i className="fa fa-search" aria-hidden="true" />
             </button>
           </form>
+          <li className="nav-item">
+            <Link className="nav-link" to="/register">Sign Up</Link>
+          </li>
         </ul>
       </div>
     </nav>
